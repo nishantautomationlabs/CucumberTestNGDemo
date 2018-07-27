@@ -1,5 +1,6 @@
 Feature: Demonstrate usage of Transformer using the Register Flow example
 
+  @TagA
   Scenario: Test Register Flow with values transformed using transformer
     Given User open the website and navigate to login page
     When User enters a random email address starting with "randomemail"

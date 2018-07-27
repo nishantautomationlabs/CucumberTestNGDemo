@@ -4,7 +4,7 @@ import cucumber.api.CucumberOptions;
 import cucumber.api.testng.AbstractTestNGCucumberTests;
 
 @CucumberOptions(
-        features = "src/test/java/features/CucumberScenarioExample.feature",
+        features = "src/test/java/features",
         glue = "stepdefinitions",
         plugin = {"pretty", "html:target/cucumber-html-report"},
         dryRun = false,
@@ -16,7 +16,7 @@ import cucumber.api.testng.AbstractTestNGCucumberTests;
 //        tags = {"@TagA", "@TagB"}  //And - Run cases with both TagA and TagB
 )
 
-public class CucumberScenariosTestRunner extends AbstractTestNGCucumberTests {
+public class CucumberTestRunner extends AbstractTestNGCucumberTests {
 
 
 }

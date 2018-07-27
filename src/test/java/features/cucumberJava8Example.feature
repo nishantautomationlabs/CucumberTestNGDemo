@@ -1,5 +1,6 @@
 Feature: Demonstrate usage of Step Definition in Java8 using the Login Flow example
 
+  @TagA
   Scenario: Test Login Flow with steps definition written using Java8
     Given User open the website and navigates to login page
     When User enters the email address as "test01@gmail.com"

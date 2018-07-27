@@ -4,10 +4,7 @@
 <suite name="BDDTestSuite" >
     <test name="BDDTest">
         <classes>
-            <class name="runner.CucumberScenariosTestRunner" />
-            <class name="runner.ScenarioOutlineTestRunner" />
-            <class name="runner.TransformerTestRunner" />
-            <class name="runner.CucumberJava8TestRunner" />
+            <class name="runner.CucumberTestRunner" />
         </classes>
     </test>
 </suite>
