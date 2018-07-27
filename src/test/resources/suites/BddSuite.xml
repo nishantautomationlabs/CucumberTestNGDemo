@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="BDDTestSuite" >
+    <test name="BDDTest">
+        <classes>
+            <class name="runner.CucumberScenariosTestRunner" />
+            <class name="runner.ScenarioOutlineTestRunner" />
+            <class name="runner.TransformerTestRunner" />
+            <class name="runner.CucumberJava8TestRunner" />
+        </classes>
+    </test>
+</suite>
