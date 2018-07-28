@@ -1,6 +1,7 @@
 package stepdefinitions;
 
 import cucumber.api.java8.En;
+import org.testng.Assert;
 
 public class StepDefJava8 implements En {
 
@@ -21,6 +22,8 @@ public class StepDefJava8 implements En {
 
         Then("^User should be redirected to the myaccount page$", () -> {
             System.out.println("Validate the title of the page");
+            Assert.assertEquals(true, false, "User is not redirected to My Account page");
+
         });
 
         And("^User should see the logout button$", () -> {

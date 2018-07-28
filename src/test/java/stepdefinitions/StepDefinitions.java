@@ -44,11 +44,9 @@ public class StepDefinitions extends BaseContext {
     }
 
     @When("^User enters valid username and password passed as data table using List$")
-    public void userEntersValidUsernameAndPasswordPassedAsDataTableUsingList(DataTable dataTable) {
-        List<User> users = dataTable.asList(User.class);
+    public void userEntersValidUsernameAndPasswordPassedAsDataTableUsingList(List<User> users) {
         for (User user : users) {
             System.out.println("Enter the username as " + user.username + " and password as " + user.password + " using List of Object");
-
         }
     }
 
