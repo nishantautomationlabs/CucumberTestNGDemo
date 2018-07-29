@@ -2,10 +2,8 @@ package stepdefinitions;
 
 import Base.BaseContext;
 import cucumber.api.DataTable;
-import cucumber.api.java.en.And;
-import cucumber.api.java.en.Given;
-import cucumber.api.java.en.Then;
-import cucumber.api.java.en.When;
+import cucumber.api.PendingException;
+import cucumber.api.java.en.*;
 import model.User;
 
 import java.util.List;
@@ -71,5 +69,10 @@ public class StepDefinitions extends BaseContext {
     @And("^User should see logout button$")
     public void userShouldSeeLogoutButton() {
         System.out.println("Validate the logout button is displayed on the page");
+    }
+
+    @But("^User should not see login button$")
+    public void userShouldNotSeeLoginButton() {
+        System.out.println("Validate the login button is not displayed on the page");
     }
 }
